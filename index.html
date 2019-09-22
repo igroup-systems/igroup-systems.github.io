@@ -8,60 +8,13 @@
     <title>Vibez</title>
  <link rel="stylesheet" href="Css/index.css">
  <link rel="icon" href="https://cdn.discordapp.com/attachments/537002489170362389/625071132021620742/6e82dc84e296be46ad9f242fdb800da5.png">
- <h1 id="HadernameD">Vibez Developement</h1> 
+<img src="https://cdn.discordapp.com/attachments/537002489170362389/625071132021620742/6e82dc84e296be46ad9f242fdb800da5.png" alt="" class="logoheader" >
 </head>
 
 <body>
     <header class="Dashboardheader">
        
     </header>
-    <div id="firebaseui-auth-container"></div>
-
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
-
-    <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-auth.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-
-    <script>
-    var firebaseConfig = {
-        apiKey: "AIzaSyAvWKtCNTWWKGbNsTIU2yR1CtFCSO63xhY",
-        authDomain: "vibez-7dfb0.firebaseapp.com",
-        databaseURL: "https://vibez-7dfb0.firebaseio.com",
-        projectId: "vibez-7dfb0",
-        storageBucket: "vibez-7dfb0.appspot.com",
-        messagingSenderId: "13150093622"
-    };
-    firebase.initializeApp(firebaseConfig);
-
-    document.addEventListener('DOMContentLoaded', function() {
-
-        var ui = new firebaseui.auth.AuthUI(firebase.auth());
-        ui.start('#firebaseui-auth-container', {
-          callbacks: {
-            signInSuccessWithAuthResult: function(credential, redirectUrl) {
-              credential.user.getIdToken().then(function(token) {
-                // make api call to backend
-              })
-            },
-            uiShown: function() {
-              console.log("uiShown");
-            }
-          },
-          signInFlow: 'popup',
-          signInOptions: [
-            // https://firebase.google.com/docs/reference/js/firebase.auth.html
-            // firebase.auth.EmailAuthProvider.PROVIDER_ID
-            firebase.auth.GoogleAuthProvider.PROVIDER_ID
-            // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-            // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-            // firebase.auth.GithubAuthProvider.PROVIDER_ID
-          ],
-        });
-
-    });
-    </script>
+   
 </body>
 </html>
