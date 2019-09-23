@@ -9,7 +9,7 @@
 background-color: rgb(37,37,37);
 }
 #logoheader{
-    inset-inline: auto;
+    inset-inline: true;
     max-width: width 10px;
     height:10px;
     padding-left: 10px;
